@@ -6,6 +6,7 @@
 
 # 📝 Introduction | 模組介紹
 [點此前往巴哈介紹文](https://forum.gamer.com.tw/C.php?bsn=18673&snA=197164&tnum=1&subbsn=12)
+
 ---
 
 <img src="https://media.discordapp.net/attachments/1003828486441541672/1003828526320976043/AddText_08-01-10.38.25.png"></img>
