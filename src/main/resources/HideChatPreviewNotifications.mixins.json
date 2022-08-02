@@ -4,7 +4,7 @@
   "package": "engineer.skyouo.mods.hidechatpreviewnotifications.mixins",
   "compatibilityLevel": "JAVA_17",
   "plugin": "engineer.skyouo.mods.hidechatpreviewnotifications.mixins.MixinPlugin",
-  "refmap": "hidechatpreviewnotifications.refmap.json",
+  "refmap": "HideChatPreviewNotifications.refmap.json",
   "mixins": [
   ],
   "client": [

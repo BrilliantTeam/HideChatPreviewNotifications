@@ -23,9 +23,9 @@ public class MinecraftClientMixin implements MixinContainer {
     private ServerData currentServer;
 
     @Inject(at = @At(value = "HEAD"), method = "setScreen", cancellable = true)
-    private void set(Screen screen, CallbackInfo ci) {
-        if (screen instanceof ChatPreviewWarningScreen) {
-            screen.onClose();
+    private void set(Screen p_91153_, CallbackInfo ci) {
+        if (p_91153_ instanceof ChatPreviewWarningScreen) {
+            p_91153_.onClose();
             ServerData serverInfo = this.currentServer;
             Objects.requireNonNull(serverInfo.getChatPreview()).acknowledge();
             ServerList.saveSingleServer(serverInfo);
