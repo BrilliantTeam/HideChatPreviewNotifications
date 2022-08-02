@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "hide_chat_preview_notifications",
+  "version": "${version}",
+  "name": "HideChatPreviewNotifications",
+  "description": "Disable the annoying chat preview / unsecured chat toast warnings.",
+  "authors": ["羽森 vs. NCT_skyouo w/ Senz0309", "Brilliant Server Network."],
+  "contact": {},
+  "icon": "assets/icon.png",
+  "license": "GPL",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "engineer.skyouo.mods.hidechatpreviewnotifications.client.HideChatPreviewNotificationsClient"
+    ],
+    "main": [
+      "engineer.skyouo.mods.hidechatpreviewnotifications.HideChatPreviewNotifications"
+    ]
+  },
+  "mixins": [
+    "HideChatPreviewNotifications.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

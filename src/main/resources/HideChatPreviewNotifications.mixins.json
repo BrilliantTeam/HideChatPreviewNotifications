@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "engineer.skyouo.mods.hidechatpreviewnotifications.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "engineer.skyouo.mods.hidechatpreviewnotifications.mixins.MixinPlugin",
+  "mixins": [
+
+  ],
+  "client": [
+    "ChatPreviewMixin",
+    "ClientPlayerNetworkHandlerMixin",
+    "ToastManagerMixin",
+    "MinecraftClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
