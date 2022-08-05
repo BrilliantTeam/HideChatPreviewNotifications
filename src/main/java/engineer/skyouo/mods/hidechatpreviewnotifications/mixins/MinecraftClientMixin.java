@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Mixin(MinecraftClient.class)
-public class MinecraftClientMixin implements MixinContainer {
+public class MinecraftClientMixin {
 
     @Shadow @Nullable
     private ServerInfo currentServerEntry;
@@ -32,10 +32,5 @@ public class MinecraftClientMixin implements MixinContainer {
 
             ci.cancel();
         }
-    }
-
-    @Override
-    public List<String> getSpecifiedVersion() {
-        return Arrays.asList("1.19", "1.19.1");
     }
 }

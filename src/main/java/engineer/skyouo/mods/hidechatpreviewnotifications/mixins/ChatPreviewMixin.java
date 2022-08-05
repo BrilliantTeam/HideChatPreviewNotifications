@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Mixin(ServerInfo.ChatPreview.class)
-public class ChatPreviewMixin implements MixinContainer {
+public class ChatPreviewMixin {
     @Shadow private boolean acknowledged;
 
     @Shadow private boolean toastShown;
@@ -31,11 +31,5 @@ public class ChatPreviewMixin implements MixinContainer {
     @Inject(at = @At(value = "RETURN"), method = "showToast", cancellable = true)
     private void showToast(CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(false);
-    }
-
-
-    @Override
-    public List<String> getSpecifiedVersion() {
-        return Arrays.asList("1.19", "1.19.1");
     }
 }
